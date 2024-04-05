@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-image: url(/lib/residential-versus-comm-plumber-2.jpg);
+    background-size: cover;
+}
+
+.hero {
+    background-color: rgba(0, 000, 000, 0.3);
+    height: 100vh;
+}
+
 
 .checkbtn {
     color: white;
@@ -21,20 +33,20 @@
 }
 
 img {
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
 }
 
 li, a, button {
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 10px;
     color: #edf0f1;
     text-decoration: none;
 }
 
 header {
-    background-color: #24252A;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +86,34 @@ button {
 button:hover{
     background-color: rgba(0, 136, 169, 0.6);
 }
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: 40%;
+}
+
+main span {
+    color: #edf0f1;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    padding-left: 30%;
+    line-height: 20px;
+}
+
+main h2 {
+    color: #edf0f1;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
 
 @media (max-width: 491px) {
  .checkbtn {
