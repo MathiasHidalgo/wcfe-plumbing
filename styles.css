@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -13,7 +15,7 @@ body{
 }
 
 .hero {
-    background-color: rgba(0, 000, 000, 0.3);
+    background-color: rgba(0, 000, 000, 0.7);
     height: 100vh;
 }
 
@@ -48,7 +50,7 @@ li, a, button {
 header {
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 30px 10%;
 }
@@ -91,18 +93,19 @@ button:hover{
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     height: 50%;
-    width: 40%;
+    width: 50%;
+    margin-top: 100px;
 }
 
 main span {
     color: #edf0f1;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 200;
-    padding-left: 30%;
+    padding-left: 38%;
+    padding-right: 10%;
     line-height: 20px;
 }
 
@@ -112,8 +115,53 @@ main h2 {
     font-family: "Raleway", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 20px;
+    padding-left: 38%;
 }
 
+.subtitle {
+    color: #edf0f1;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px 0 0 38%;
+}
+
+.three {
+    padding: 20px 10% 0 38%;
+}
+
+footer {
+    background-color: rgba(0, 000, 000, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    color: #edf0f1;
+    padding: 0 19%;
+}
+
+footer div {
+    padding: 20px 10px 20px 10px;
+}
+
+footer .subtitle {
+    font-size: 10px;
+}
+
+
+.footer-button{
+    background: transparent;
+    border: 1px solid #edf0f1;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: "Raleway";
+    font-size: 2px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+
+
+/*Cellphone*/
 
 @media (max-width: 491px) {
  .checkbtn {
